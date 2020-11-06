@@ -1,4 +1,5 @@
 FROM ubuntu:latest
+ENV TZ=Asia/Shanghai
 RUN apt-get update
 RUN apt-get install -y apt-utils build-essential sudo vim git cppcheck cmake python3-pip wget googletest lcov 
 RUN pip3 install cpplint
